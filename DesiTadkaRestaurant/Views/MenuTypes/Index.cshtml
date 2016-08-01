@@ -1,0 +1,23 @@
+﻿@*-File Name: Index.cshtml
+    - Author's Name: Kinjal Patel(200334364) and Gurpanth Singh(200299024)
+    - Website Name: aromarestaurant.azurewebsites.net
+    - Full Description: It shows the all menu items of restaurant. ()*@
+@using DesiTadkaRestaurant.Models
+@model IEnumerable<MenuType>
+
+@{
+    ViewBag.Title = "Index";
+    Layout = "~/Views/Shared/_Layout.cshtml";
+}
+
+<h2>Browse Menu Types:</h2>
+<p>
+    Select from @Model.Count() different Menu Types:
+</p>
+
+<ul>
+    @foreach (MenuType MenuItem in Model)
+    {
+        <li>@Html.ActionLink(MenuItem.Name, "Browse", new { MenuType = MenuItem.Name })</li>
+    }
+</ul>

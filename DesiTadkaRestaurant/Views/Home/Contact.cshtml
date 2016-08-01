@@ -1,17 +1,54 @@
 ﻿@{
-    ViewBag.Title = "Contact";
+    ViewBag.Title = "Contact Us";
 }
 <h2>@ViewBag.Title.</h2>
-<h3>@ViewBag.Message</h3>
 
-<address>
-    One Microsoft Way<br />
-    Redmond, WA 98052-6399<br />
-    <abbr title="Phone">P:</abbr>
-    425.555.0100
-</address>
+<div class="container">
+    <div class="row">
+        <div class="col-md-6">
+            <div class="panel panel-primary">
+                <div class="panel-heading">Contact Info</div>
+                <div class="panel-body">
+                    <address>
+                        <strong>Desi Tadka Restaurant</strong><br>
+                        630 Pokemone street<br>
+                        Beavorton, ON L9L 9L9<br>
+                        <abbr title="Phone">TEL:</abbr>
+                        (705) 123-3434
+                    </address>
+                    <address>
+                        <strong>Support:</strong>   <a href="mailto:Support@example.com">Support@example.com</a><br />
+                        <strong>Marketing:</strong> <a href="mailto:Marketing@example.com">Marketing@example.com</a>
+                    </address>
+                    <h4>Location:</h4>
+                    <img src="~/Assets/Images/location.png" alt="This the map of Desi Tadka Restaurant" height="300" width="500" />
+                </div>
+            </div>
+        </div>
 
-<address>
-    <strong>Support:</strong>   <a href="mailto:Support@example.com">Support@example.com</a><br />
-    <strong>Marketing:</strong> <a href="mailto:Marketing@example.com">Marketing@example.com</a>
-</address>
+
+        <div class="col-md-6">
+            <div class="form-group">
+                <label class="control-label">Name</label>
+                <input type="text" class="form-control" id="Name" placeholder="Please enter your name" required />
+            </div>
+            <div class="form-group">
+                <label class="control-label">Email</label>
+                <input type="text" class="form-control" id="Email" placeholder="Please enter your email" required />
+            </div>
+            <div class="form-group">
+                <label class="control-label">Contact</label>
+                <input type="text" class="form-control" id="Contact" placeholder="Please enter your Contact" required />
+            </div>
+            <div class="form-group">
+                <label class="control-label">Your Feedback Message</label>
+                <textarea id="message" class="form-control" rows="5" cols="15" placeholder="Your Message here" required></textarea>
+            </div>
+            <div class="text-center">
+                <button type="submit" class="btn btn-primary btn-lg" id="btnSend">Send</button>
+                <button type="submit" class="btn btn-warning btn-lg" id="btnCancel">Cancel</button>
+            </div>
+        </div>
+    </div>
+</div>
+</div>

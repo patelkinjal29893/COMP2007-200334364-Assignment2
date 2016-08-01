@@ -1,0 +1,22 @@
+﻿
+@*-File Name: Browse.cshtml
+    - Author's Name: Kinjal Patel(200334364)
+    - Website Name: 
+    - Full Description: This will able user for browse details form menutype model*@
+@using DesiTadkaRestaurant.Models
+@model MenuType
+
+@{
+    ViewBag.Title = "Browse";
+    Layout = "~/Views/Shared/_Layout.cshtml";
+}
+<h2 style="font-size:x-large">Details of Menu: @Model.Name</h2>
+<hr />
+
+<ul>
+    @foreach (MenuItem item in Model.MenuItems)
+    {
+        <li style="font-size:x-large">@Html.ActionLink(item.MenuName, "Details", new { id = item.MenuItemId })</li>
+    }
+</ul>
+

@@ -1,0 +1,70 @@
+﻿@model IEnumerable<DesiTadkaRestaurant.Models.Menu>
+
+@{
+    ViewBag.Title = "Index";
+    Layout = "~/Views/Shared/_Layout.cshtml";
+}
+<body style="background-color:#1a1a1a">
+    <h1 style="color:#ff0000">Menu</h1>
+    <div class="row">
+        <div class="col-sm-4">
+
+            <div>
+
+                <h3 style="color:#efc7c7">Appetizers</h3>
+
+                <div>
+                    <img alt="appetizer" src="~/Assets/Images/Appetizers/2.jpg" style="height:250px; width:200px" />
+                </div>
+                <hr />
+
+                <div>
+                    <a href="~/Views/MenuTypes/Browse?MenuType=Appetizer.cshtml" class="btn btn-lg btn-warning">
+                        <span>View Appetizers</span>
+                    </a>
+                </div>
+
+            </div>
+
+        </div>
+        <div class="col-sm-4">
+
+            <div>
+
+                <h3 style="color:#efc7c7">Main Course</h3>
+
+                <div class="active">
+                    <img alt="maincourse" src="~/Assets/Images/MainCourses/1-1.jpg" style="height:250px; width:200px" />.
+                </div>
+                <hr />
+
+                <div>
+
+                    <a href="~/Views/MenuTypes/Browse?MenuType=Main course.cshtml" class="btn btn-lg btn-warning">
+                        <span>View Main Course</span>
+                    </a>
+                </div>
+
+            </div>
+        </div>
+        <div class="col-sm-4">
+
+            <div>
+
+                <h3 style="color:#efc7c7">Dessert</h3>
+
+                <div class="active">
+                    <img alt="dessert" src="~/Assets/Images/Desserts/10.jpg" style="height:250px; width:200px" />.
+                </div>
+                <hr />
+                <div>
+                    <a href="~/Views/MenuTypes/Browse?MenuType=Desserts.cshtml" class="btn btn-lg btn-warning">
+                        <span>View Desserts</span>
+                    </a>
+                </div>
+
+            </div>
+
+        </div>
+    </div>
+</body>
